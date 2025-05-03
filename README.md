@@ -78,8 +78,6 @@ python app.py
 
 ### Frontend (React)
 ```bash
-Copy
-Edit
 cd client
 npm install
 npm run dev
@@ -90,7 +88,7 @@ Backend: Deployed on Render
 
 Frontend: Deployed on Netlify
 
-Dataset
+Dataset :\n
 Pima Indians Diabetes Dataset
 
 ✨ Author
