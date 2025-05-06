@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 
-const FormInput = () => {
+const FormInput = ({ setResult, loading, setLoading }) => {
   const [formData, setFormData] = useState({
     pregnancies: "",
     glucose: "",
@@ -12,9 +12,6 @@ const FormInput = () => {
     diabetesPedigreeFunction: "",
     age: "",
   });
-
-  const [result, setResult] = useState(null);
-  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -108,12 +105,6 @@ const FormInput = () => {
           >
             {loading ? "Diagnosing..." : "Submit"}
           </button>
-
-          {result && (
-            <div className="mt-4 text-center text-lg font-medium text-blue-700">
-              Diagnosis Result: <span className="font-bold">{result}</span>
-            </div>
-          )}
         </div>
       </form>
     </div>

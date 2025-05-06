@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
-import FormInput from './components/FormInput'
 import Home from './components/Home'
 import About from './components/About'
+import UserForm from './components/UserForm'
 
 function App() {
   return (
@@ -17,11 +17,10 @@ function App() {
             </nav>
           </div>
         </header>
-        
         <main className="h-full w-full overflow-hidden">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/diagnosis" element={<FormInput />} />
+            <Route path="/diagnosis" element={<UserForm />} />
             <Route path="/about" element={<About />} />
           </Routes>
         </main>
