@@ -21,7 +21,7 @@ const UserForm = () => {
     <div className="w-full h-full flex flex-col bg-gradient-to-br from-blue-50 to-blue-200 items-center justify-center">
       {step === 0 && (
         <form onSubmit={handleUserSubmit} className="bg-white shadow-lg rounded-2xl p-8 w-full max-w-md space-y-6">
-          <h2 className="text-2xl font-bold text-blue-800 mb-4 text-center">Diagnosis Result</h2>
+          <h2 className="text-2xl font-bold text-blue-800 mb-4 text-center">User Info</h2>
           <div>
             <label className="block font-medium text-gray-700 mb-1">Name</label>
             <input type="text" name="name" value={user.name} onChange={handleUserChange} required className="w-full border border-gray-300 rounded-xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" />
