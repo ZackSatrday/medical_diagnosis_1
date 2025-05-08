@@ -5,7 +5,7 @@ const Home = () => {
     <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-blue-200 flex justify-center items-center p-4 pt-20">
       <div className="bg-white shadow-lg rounded-2xl p-8 w-full max-w-lg space-y-6 text-center">
         <h1 className="text-3xl font-bold text-blue-800 mb-4">
-          Welcome to Daibetic-A
+          Welcome to Daibatic-Ai
         </h1>
         <p className="text-gray-700 mb-6">
           A diabetes diagnosis tool that helps predict your risk based on health parameters.
